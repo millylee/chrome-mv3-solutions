@@ -6,11 +6,6 @@
   <title>KeepAlive</title>
 </head>
 <body>
-  <script>
-    // 发送低于 30s 的消息
-    setInterval(() => {
-      chrome.runtime.sendMessage({ type: 'keepalive' });
-    }, 25 * 1000)
-  </script>
+  <script src="keepalive.js"></script>
 </body>
 </html>
